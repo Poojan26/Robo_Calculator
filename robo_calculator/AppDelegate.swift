@@ -2,8 +2,11 @@
 //  AppDelegate.swift
 //  robo_calculator
 //
-//  Created by Jay on 9/26/21.
-//
+//  Created by Poojan on 9/26/21.
+//  Name: Poojan Patel
+//  Student Id: 301228811
+//  Course: MAPD-712 (IOS Development)
+//  Assignment-1: Calculator
 
 import UIKit
 
