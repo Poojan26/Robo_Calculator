@@ -5,7 +5,7 @@
 //  Created by Poojan on 9/26/21.
 //  Name: Poojan Patel
 //  Student Id: 301228811
-//  Course: MAPD-712 (IOS Development)
+//  Course: MAPD-714 (IOS Development)
 //  Assignment-1: Calculator
 
 import UIKit
