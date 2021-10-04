@@ -2,6 +2,9 @@
 // Name: Poojan Patel
 // Student ID- 301228811
 // Course: MAPD 714
+// In first part UI was created for this application
+// Now in second part, the methods are written for the buttons to perform basic arithmetic operations
+// Date modified: 10/3/2021
 
 
 import UIKit
@@ -133,8 +136,8 @@ class ViewController: UIViewController {
             print(AnswerLabel.text )
         }
         
-        if operand1.contains("x"){
-            var answer_var = operand1.components(separatedBy: "x")
+        if operand1.contains("X"){
+            var answer_var = operand1.components(separatedBy: "X")
             operand1 = answer_var[0]
             operand2 = answer_var[1]
             
