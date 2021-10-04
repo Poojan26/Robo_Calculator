@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     // Answer label outlet
     @IBOutlet weak var AnswerLabel: UILabel!
     
-    // Lifecylce function
+    // Lifecycle function
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
   
     
     @IBAction func PlusMinusButton(_ sender: UIButton) {
-        
+        print(AnswerLabel.text?.prefix(1))
         
     }
     
@@ -156,35 +156,35 @@ class ViewController: UIViewController {
 // Functions of Mathematical operations
 func add(a:String, b:String) -> String{
     var result: Float = Float(a)! + Float(b)!
-    var answer = String(result)
+    var answer = String(format: "%.8f" ,result)
     return answer
     
 }
 
 func subtract(a:String, b:String) -> String{
     var result: Float = Float(a)! - Float(b)!
-    var answer = String(result)
+    var answer = String(format: "%.8f" ,result)
     return answer
     
 }
 
 func multiply(a:String, b:String) -> String{
     var result: Float = Float(a)! * Float(b)!
-    var answer = String(result)
+    var answer = String(format: "%.8f" ,result)
     return answer
     
 }
 
 func divide(a:String, b:String) -> String{
     var result: Float = Float(a)! / Float(b)!
-    var answer = String(result)
+    var answer = String(format: "%.8f" ,result)
     return answer
     
 }
 
 func percentage(a:String) -> String{
     var result: Float = Float(a)! / 100
-    var answer = String(result)
+    var answer = String(format: "%.8f" ,result)
     return answer
 }
 
