@@ -16,15 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMq-ei-2Lc">
-                                <rect key="frame" x="36" y="97" width="343" height="83"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMq-ei-2Lc">
+                                <rect key="frame" x="36" y="65" width="343" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8I-Il-Wuj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8I-Il-Wuj">
                                 <rect key="frame" x="106" y="176" width="193" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
@@ -32,15 +31,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjp-xg-Skf">
-                                <rect key="frame" x="166" y="269" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Clear">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9V-Sl-QxG">
                                 <rect key="frame" x="89" y="314" width="232" height="510"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,6 +47,10 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NUY-39-zby"/>
+                                    <action selector="OnOperatorPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnV-FN-WdY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-Hf-Vg9">
                                 <rect key="frame" x="6" y="468" width="75" height="47"/>
@@ -66,6 +60,10 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdc-Vc-9Qw"/>
+                                    <action selector="OnOperatorPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z55-OQ-Kc2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5E-5M-pmz">
                                 <rect key="frame" x="6" y="560" width="75" height="47"/>
@@ -75,6 +73,10 @@
                                 <state key="normal" title="X">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLr-nh-PnI"/>
+                                    <action selector="OnOperatorPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rTq-pl-evM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cr-57-QBJ">
                                 <rect key="frame" x="329" y="381" width="75" height="47"/>
@@ -84,6 +86,10 @@
                                 <state key="normal" title="/">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CmQ-aO-76e"/>
+                                    <action selector="OnOperatorPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaG-ME-bEK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afR-Q8-sGG">
                                 <rect key="frame" x="329" y="468" width="75" height="47"/>
@@ -93,39 +99,15 @@
                                 <state key="normal" title="%">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSl-e7-X1U">
-                                <rect key="frame" x="329" y="560" width="75" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="+/-">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXr-uc-LWO">
-                                <rect key="frame" x="154" y="840" width="102" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="=">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
+                                <connections>
+                                    <action selector="OnOperatorPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2cS-By-vTv"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="record.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bUA-jz-QF0">
                                 <rect key="frame" x="205" y="194.5" width="78" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqa-xR-bRP">
-                                <rect key="frame" x="97" y="334" width="97" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="1" backgroundImage="square.fill" catalog="system">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maO-kV-Uml">
                                 <rect key="frame" x="215" y="334" width="97" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -134,6 +116,9 @@
                                 <state key="normal" title="2" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UKR-fk-3Sc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cF-dj-T9C">
                                 <rect key="frame" x="97" y="416" width="97" height="65"/>
@@ -143,6 +128,9 @@
                                 <state key="normal" title="3" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJb-Z9-hwf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMl-CN-CLV">
                                 <rect key="frame" x="215" y="416" width="97" height="65"/>
@@ -152,6 +140,9 @@
                                 <state key="normal" title="4" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4QB-nv-BBf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViC-4v-iKN">
                                 <rect key="frame" x="97" y="500" width="97" height="65"/>
@@ -161,6 +152,9 @@
                                 <state key="normal" title="5" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehh-fJ-TpA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpC-9q-ejt">
                                 <rect key="frame" x="97" y="583" width="97" height="65"/>
@@ -170,6 +164,9 @@
                                 <state key="normal" title="7" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVa-mc-U4t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gV-83-WyE">
                                 <rect key="frame" x="215" y="498" width="97" height="65"/>
@@ -179,6 +176,9 @@
                                 <state key="normal" title="6" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qoT-99-ipi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kav-Mi-OkZ">
                                 <rect key="frame" x="213" y="581" width="97" height="65"/>
@@ -188,6 +188,9 @@
                                 <state key="normal" title="8" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZr-4y-WnY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHe-DV-1G5">
                                 <rect key="frame" x="97" y="667" width="97" height="65"/>
@@ -197,6 +200,9 @@
                                 <state key="normal" title="9" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21e-Rj-gyF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPa-aq-gg7">
                                 <rect key="frame" x="213" y="665" width="97" height="65"/>
@@ -206,13 +212,10 @@
                                 <state key="normal" title="0" backgroundImage="square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pid-di-d2W"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arrow.backward.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FSK-v9-jmN">
-                                <rect key="frame" x="224" y="759" width="97" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikh-rS-WdG">
                                 <rect key="frame" x="97" y="758" width="97" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -221,16 +224,72 @@
                                 <state key="normal" title=".">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v60-IZ-DWr"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="record.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Md7-Cg-5A1">
                                 <rect key="frame" x="116" y="195.5" width="78" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNt-ez-zmf">
+                                <rect key="frame" x="97" y="334" width="97" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="1" backgroundImage="square.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnNumbersPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ueB-QF-Q4E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQN-hm-4Se">
+                                <rect key="frame" x="329" y="560" width="75" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="+/-">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnOperatorPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VjE-pP-Oda"/>
+                                    <action selector="PlusMinusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kk6-aK-xPJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUG-D6-bUy">
+                                <rect key="frame" x="166" y="268" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uJ-BF-fj2"/>
+                                    <action selector="OnSpecialButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZC-4J-aOf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViF-O6-Wkv">
+                                <rect key="frame" x="155" y="842" width="67" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="EqualButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDn-Qk-60l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="AnswerLabel" destination="rMq-ei-2Lc" id="zZt-cC-RXY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,7 +297,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.backward.square" catalog="system" width="128" height="114"/>
         <image name="record.circle" catalog="system" width="128" height="121"/>
         <image name="square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
