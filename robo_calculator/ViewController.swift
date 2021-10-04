@@ -88,15 +88,26 @@ class ViewController: UIViewController {
         
     }
     
-    
-    @IBAction func BackSpaceButtonPressed(_ sender: UIButton) {
-        AnswerLabel.text?.removeLast()
+    @IBAction func BackspaceButton(_ sender: UIButton) {
+        var text = AnswerLabel.text
+        // Used droplast function to drop last character
+        text = String(text!.dropLast())
+        AnswerLabel.text = text
+        // If the last number from answer is removed then replace with 0
+        if AnswerLabel.text == "" {
+            AnswerLabel.text?.append("0")
+        }
     }
     
-    @IBAction func OnSpecialButtonPress(_ sender: UIButton) {
-        
+    // Percentage button
+    @IBAction func PercentageButton(_ sender: UIButton) {
+        var output = percentage(a: operand1)
+        AnswerLabel.text = output
+        print(output)
     }
     
+    
+    // Equal button calculations
     @IBAction func EqualButtonPress(_ sender: UIButton) {
         if operand1.contains("+"){
             var answer_var = operand1.components(separatedBy: "+")
@@ -170,4 +181,13 @@ func divide(a:String, b:String) -> String{
     return answer
     
 }
+
+func percentage(a:String) -> String{
+    var result: Float = Float(a)! / 100
+    var answer = String(result)
+    return answer
+}
+
+
+
 
