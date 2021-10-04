@@ -23,8 +23,6 @@ class ViewController: UIViewController {
     }
     
     
-    
-    
     // Actions
     @IBAction func OnNumbersPress(_ sender: UIButton) {
         var answer_text = sender.titleLabel!.text!
@@ -73,10 +71,16 @@ class ViewController: UIViewController {
         AnswerLabel.text = (operand1)
     }
   
-    
+    // Plus minus button
     @IBAction func PlusMinusButton(_ sender: UIButton) {
-        print(AnswerLabel.text?.prefix(1))
-        
+        print(AnswerLabel.text!.prefix(1))
+        if AnswerLabel.text!.prefix(1) != "-"{
+            AnswerLabel.text!.insert("-", at: AnswerLabel.text!.startIndex)
+        }
+        else{
+             var result = AnswerLabel.text!.dropFirst()
+            AnswerLabel.text = String(result)
+        }
     }
     
     // Clear button
